@@ -1,16 +1,46 @@
-# React + Vite
+# Portafolio Personal - React & Vite 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto académico desarrollado para la carrera de Analista Programador. Consiste en un portafolio web personal moderno, interactivo y estructurado bajo los mejores estándares de la industria.
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologías Utilizadas
+- **Frontend:** React 19, Vite
+- **Estilos y UI:** Ant Design (antd), CSS Custom (Glassmorphism)
+- **Testing:** Vitest, React Testing Library
+- **Arquitectura:** Atomic Design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🏗️ Arquitectura (Atomic Design)
+El proyecto está estructurado siguiendo el patrón de diseño atómico para garantizar la máxima escalabilidad y reutilización de componentes:
+- **`src/components/atoms`**: Componentes básicos sin lógica compleja.
+- **`src/components/molecules`**: Agrupación de átomos (ej. `ProjectCard`, `StudyCard`).
+- **`src/components/organisms`**: Secciones completas de la interfaz (ej. `PersonalSection`, `ContactForm`).
+- **`src/pages`**: Páginas principales que unen los organismos (ej. `HomePage.jsx`).
 
-## React Compiler
+## ⚙️ Cómo ejecutar el proyecto localmente
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clonar el repositorio:
+```bash
+git clone <https://github.com/sebahenry17-arch/Portafolio.git>
+```
 
-## Expanding the ESLint configuration
+2. Instalar las dependencias del proyecto:
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Levantar el servidor de desarrollo:
+```bash
+npm run dev
+```
+
+## 🧪 Pruebas Unitarias
+El proyecto incluye un entorno de pruebas configurado con Vitest y soporte para Ant Design (`ResizeObserver` mockeado). Para ejecutar las pruebas, utiliza el siguiente comando:
+```bash
+npm run test
+```
+
+---
+
+
+
+
+  
